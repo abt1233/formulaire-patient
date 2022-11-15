@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+         
+         <meta charset="utf-8">
+         <title> Formulaire de saisie </title>
+     
+    </head>       
+
+<body>
+    <style>
+       
+       body {text-align: center; background:url("https://i.etsystatic.com/16692605/r/il/d262ff/2603200347/il_570xN.2603200347_tvuh.jpg");
+        background-position: center; background-size: 500px 800px; background-repeat: no-repeat; background-color: beige;}
+       h1 {text-decoration: underline; color:saddlebrown; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+       
+       fieldset { width:250px ; margin: auto;  }
+       
+
+
+    </style>
+    <header>
+
+        <h1>INFO PATIENT</h1>
+    </header>
+    
+<form method="post" action="#">
+ <fieldset>
+    
+    <p><label for="nom">*Votre nom</label><br>
+    <input type="text" id="nom" name="nom" placeholder="ex...Schmutz" required><br></p>
+
+
+    <p><label for="prénom">*Votre Prénom</label><br>
+    <input type="text" id="prénom" name="prénom" placeholder="ex...Remi" required><br></p>
+
+    <p><label for="genre">*Votre Genre</label><br>
+    <input type="text" id="genre" name="genre" placeholder="ex...Féminin,Masculin" required><br></p>
+</fieldset>
+<fieldset>
+    
+    <p><label for="adress">*Votre adresse</label><br>
+    <input type="text" id="adress" name="adress" placeholder="ex...bernex en combes 11" required><br></p>
+
+    <p><label for="postal">*Votre code postal</label><br>
+    <input type="text" id="postal" name="postal" placeholder="ex...1233 Bernex" required><br></p>
+
+    <p><label for="ville">*Votre Ville</label><br>
+    <input type="text" id="ville" name="ville" placeholder="ex...Genève" required><br></p>
+</fieldset>
+ <fieldset>  
+    
+    <p><label for="birthday">*Date de naissance</label><br>
+    <input type="datetime-local" id="birthday" name="birthday" required><br></p>
+
+    <p><label for="lieu">*Votre lieu de naissance</label><br>
+    <input type="text" id="lieu" name="lieu" placeholder="ex...Fribourg" required><br></p>
+</fieldset> 
+
+    <p><label for="info+">Info complémentaire</label><br>
+    <textarea id="info+" name="info+" placeholder="ex...je suis un traitement..." rows="5" cols="30"></textarea><br></p>
+
+
+    <p><input name="enregistrer" type="submit"  value="enregistrer">
+    <input name="enregistrer" type="reset"  value="effacer"></p>
+
+</form>
+
+</body>
+</html>
